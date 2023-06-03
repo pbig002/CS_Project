@@ -46,17 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="db_salaryDataSet.cs">
+      <DependentUpon>db_salaryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_salaryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_salaryDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MianScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MianScreen.Designer.cs">
       <DependentUpon>MianScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff.cs">
+    <Compile Include="StaffScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff.Designer.cs">
-      <DependentUpon>Staff.cs</DependentUpon>
+    <Compile Include="StaffScreen.Designer.cs">
+      <DependentUpon>StaffScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,9 +80,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Staff.resx">
-      <DependentUpon>Staff.cs</DependentUpon>
+    <EmbeddedResource Include="StaffScreen.resx">
+      <DependentUpon>StaffScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="db_salaryDataSet.xsc">
+      <DependentUpon>db_salaryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_salaryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_salaryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_salaryDataSet.xss">
+      <DependentUpon>db_salaryDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

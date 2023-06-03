@@ -28,43 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MianScreen));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.teacher_show_btn = new System.Windows.Forms.Button();
+            this.staffShow_btn = new System.Windows.Forms.Button();
             this.panelController = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.db_salaryDataSet = new C__Project.db_salaryDataSet();
+            this.dbsalaryDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.db_salaryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalaryDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.teacher_show_btn);
+            this.panel1.Controls.Add(this.staffShow_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(120, 527);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // teacher_show_btn
+            // staffShow_btn
             // 
-            this.teacher_show_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.teacher_show_btn.Location = new System.Drawing.Point(13, 119);
-            this.teacher_show_btn.Name = "teacher_show_btn";
-            this.teacher_show_btn.Size = new System.Drawing.Size(75, 23);
-            this.teacher_show_btn.TabIndex = 0;
-            this.teacher_show_btn.Text = "Staff";
-            this.teacher_show_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.teacher_show_btn.UseVisualStyleBackColor = true;
-            this.teacher_show_btn.Click += new System.EventHandler(this.teacher_show_btn_Click);
+            this.staffShow_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.staffShow_btn.Location = new System.Drawing.Point(13, 119);
+            this.staffShow_btn.Name = "staffShow_btn";
+            this.staffShow_btn.Size = new System.Drawing.Size(75, 23);
+            this.staffShow_btn.TabIndex = 0;
+            this.staffShow_btn.Text = "Staff";
+            this.staffShow_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.staffShow_btn.UseVisualStyleBackColor = true;
+            this.staffShow_btn.Click += new System.EventHandler(this.teacher_show_btn_Click);
             // 
             // panelController
             // 
-            this.panelController.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelController.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelController.Location = new System.Drawing.Point(120, 35);
             this.panelController.Name = "panelController";
             this.panelController.Size = new System.Drawing.Size(839, 492);
             this.panelController.TabIndex = 2;
+            this.panelController.Paint += new System.Windows.Forms.PaintEventHandler(this.panelController_Paint);
             // 
             // panel2
             // 
@@ -74,6 +83,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(839, 35);
             this.panel2.TabIndex = 1;
+            // 
+            // db_salaryDataSet
+            // 
+            this.db_salaryDataSet.DataSetName = "db_salaryDataSet";
+            this.db_salaryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dbsalaryDataSetBindingSource
+            // 
+            this.dbsalaryDataSetBindingSource.DataSource = this.db_salaryDataSet;
+            this.dbsalaryDataSetBindingSource.Position = 0;
             // 
             // MianScreen
             // 
@@ -88,6 +107,8 @@
             this.Name = "MianScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.db_salaryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsalaryDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,9 +116,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button teacher_show_btn;
+        private System.Windows.Forms.Button staffShow_btn;
         private System.Windows.Forms.Panel panelController;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.BindingSource dbsalaryDataSetBindingSource;
+        private db_salaryDataSet db_salaryDataSet;
     }
 }
 

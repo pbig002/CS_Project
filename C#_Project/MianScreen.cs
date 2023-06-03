@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,28 @@ namespace C__Project
         {
             InitializeComponent();
         }
+       
 
         private void teacher_show_btn_Click(object sender, EventArgs e)
         {
-            Staff s = new Staff();
-            s.TopLevel = false;
-            panelController .Controls.Add(s);
-            s.BringToFront();
-            s.Show();
+            {
+                StaffScreen s = new StaffScreen();
+                s.TopLevel = false;
+                s.Dock = DockStyle.Fill;
+                panelController.Controls.Add(s);
+                s.BringToFront();
+                s.Show();
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelController_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

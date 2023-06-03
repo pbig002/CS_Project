@@ -3,10 +3,10 @@ C:\Users\Advice\source\repos\C#_Project\C#_Project\bin\Debug\C#_Project.exe
 C:\Users\Advice\source\repos\C#_Project\C#_Project\bin\Debug\C#_Project.pdb
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.csproj.AssemblyReference.cache
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.csproj.SuggestedBindingRedirects.cache
-C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.Form1.resources
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.Properties.Resources.resources
-C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.Teacher.resources
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.csproj.GenerateResource.cache
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.csproj.CoreCompileInputs.cache
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.exe
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.pdb
+C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.MianScreen.resources
+C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.StaffScreen.resources
