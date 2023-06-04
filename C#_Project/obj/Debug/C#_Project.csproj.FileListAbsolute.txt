@@ -10,3 +10,6 @@ C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.exe
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.pdb
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.MianScreen.resources
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.StaffScreen.resources
+C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.DepartmentScreen.resources
+C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.PositionScreen.resources
+C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.Quilitification_screen.resources

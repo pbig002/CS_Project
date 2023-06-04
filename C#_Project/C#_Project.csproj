@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +56,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_salaryDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DepartmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentScreen.Designer.cs">
+      <DependentUpon>DepartmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositionScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositionScreen.Designer.cs">
+      <DependentUpon>PositionScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quilitification_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quilitification_screen.Designer.cs">
+      <DependentUpon>Quilitification_screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MianScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +88,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DepartmentScreen.resx">
+      <DependentUpon>DepartmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MianScreen.resx">
       <DependentUpon>MianScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositionScreen.resx">
+      <DependentUpon>PositionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +106,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Quilitification_screen.resx">
+      <DependentUpon>Quilitification_screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffScreen.resx">
       <DependentUpon>StaffScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,7 +117,6 @@
     </None>
     <None Include="db_salaryDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>db_salaryDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="db_salaryDataSet.xss">
