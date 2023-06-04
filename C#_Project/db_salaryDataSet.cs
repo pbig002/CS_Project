@@ -4,6 +4,17 @@
 
     partial class db_salaryDataSet
     {
+        partial class accountDataTable
+        {
+        }
+
+        partial class positionDataTable
+        {
+        }
+
+        partial class staffDataTable
+        {
+        }
     }
 }
 
