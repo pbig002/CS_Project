@@ -31,14 +31,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.delete_button = new Guna.UI2.WinForms.Guna2Button();
+            this.update_button = new Guna.UI2.WinForms.Guna2Button();
+            this.save_button = new Guna.UI2.WinForms.Guna2Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -55,13 +55,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(246)))), ((int)(((byte)(244)))));
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.delete_button);
+            this.panel2.Controls.Add(this.update_button);
+            this.panel2.Controls.Add(this.save_button);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(671, 0);
+            this.panel2.Location = new System.Drawing.Point(605, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(129, 450);
+            this.panel2.Size = new System.Drawing.Size(195, 450);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -75,49 +75,8 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(671, 137);
+            this.panel3.Size = new System.Drawing.Size(605, 137);
             this.panel3.TabIndex = 2;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.button2.Location = new System.Drawing.Point(30, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "SAVE";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.button3.Location = new System.Drawing.Point(30, 223);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "EDIT";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.button4.Location = new System.Drawing.Point(30, 304);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Quilitification";
             // 
             // label3
             // 
@@ -155,6 +114,88 @@
             this.textBox1.Size = new System.Drawing.Size(138, 20);
             this.textBox1.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Quilitification";
+            // 
+            // delete_button
+            // 
+            this.delete_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(246)))), ((int)(((byte)(244)))));
+            this.delete_button.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.delete_button.BorderRadius = 8;
+            this.delete_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.delete_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_button.ForeColor = System.Drawing.Color.Black;
+            this.delete_button.Image = global::C__Project.Properties.Resources.delete;
+            this.delete_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.delete_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.delete_button.IndicateFocus = true;
+            this.delete_button.Location = new System.Drawing.Point(6, 246);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.delete_button.Size = new System.Drawing.Size(180, 75);
+            this.delete_button.TabIndex = 12;
+            this.delete_button.Text = "DELETE";
+            this.delete_button.TextFormatNoPrefix = true;
+            // 
+            // update_button
+            // 
+            this.update_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(246)))), ((int)(((byte)(244)))));
+            this.update_button.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.update_button.BorderRadius = 8;
+            this.update_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.update_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.update_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.update_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.update_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.update_button.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.update_button.ForeColor = System.Drawing.Color.Black;
+            this.update_button.Image = global::C__Project.Properties.Resources.changes;
+            this.update_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.update_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.update_button.IndicateFocus = true;
+            this.update_button.Location = new System.Drawing.Point(6, 143);
+            this.update_button.Name = "update_button";
+            this.update_button.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.update_button.Size = new System.Drawing.Size(180, 75);
+            this.update_button.TabIndex = 11;
+            this.update_button.Text = "UPDATE";
+            this.update_button.TextFormatNoPrefix = true;
+            // 
+            // save_button
+            // 
+            this.save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(246)))), ((int)(((byte)(244)))));
+            this.save_button.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.save_button.BorderRadius = 8;
+            this.save_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.save_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.save_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.save_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.save_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.save_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_button.ForeColor = System.Drawing.Color.Black;
+            this.save_button.Image = global::C__Project.Properties.Resources.download;
+            this.save_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.save_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.save_button.IndicateFocus = true;
+            this.save_button.Location = new System.Drawing.Point(6, 41);
+            this.save_button.Name = "save_button";
+            this.save_button.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.save_button.Size = new System.Drawing.Size(180, 75);
+            this.save_button.TabIndex = 10;
+            this.save_button.Text = "SAVE";
+            this.save_button.TextFormatNoPrefix = true;
+            // 
             // Quilitification_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,13 +218,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2Button delete_button;
+        private Guna.UI2.WinForms.Guna2Button update_button;
+        private Guna.UI2.WinForms.Guna2Button save_button;
     }
 }

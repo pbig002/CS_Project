@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.edit_btn = new System.Windows.Forms.Button();
-            this.delete_btn = new System.Windows.Forms.Button();
-            this.save_btn = new System.Windows.Forms.Button();
             this.ShowStaff = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -51,7 +48,6 @@
             this.mail_textbox = new System.Windows.Forms.TextBox();
             this.tel_textbox = new System.Windows.Forms.TextBox();
             this.choose_image = new System.Windows.Forms.Button();
-            this.picture_box = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,64 +63,38 @@
             this.name_textbox = new System.Windows.Forms.TextBox();
             this.gender_textbox = new System.Windows.Forms.TextBox();
             this.birthday_datepicker = new System.Windows.Forms.DateTimePicker();
+            this.picture_box = new System.Windows.Forms.PictureBox();
+            this.delete_button = new Guna.UI2.WinForms.Guna2Button();
+            this.update_button = new Guna.UI2.WinForms.Guna2Button();
+            this.save_button = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_box)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_box)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
-            this.panel1.Controls.Add(this.edit_btn);
-            this.panel1.Controls.Add(this.delete_btn);
-            this.panel1.Controls.Add(this.save_btn);
+            this.panel1.Controls.Add(this.delete_button);
+            this.panel1.Controls.Add(this.update_button);
+            this.panel1.Controls.Add(this.save_button);
             this.panel1.Controls.Add(this.ShowStaff);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(957, 0);
+            this.panel1.Location = new System.Drawing.Point(887, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 725);
+            this.panel1.Size = new System.Drawing.Size(199, 725);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // edit_btn
-            // 
-            this.edit_btn.Location = new System.Drawing.Point(21, 184);
-            this.edit_btn.Name = "edit_btn";
-            this.edit_btn.Size = new System.Drawing.Size(75, 23);
-            this.edit_btn.TabIndex = 3;
-            this.edit_btn.Text = "EDIT";
-            this.edit_btn.UseVisualStyleBackColor = true;
-            this.edit_btn.Click += new System.EventHandler(this.edit_btn_Click);
-            // 
-            // delete_btn
-            // 
-            this.delete_btn.Location = new System.Drawing.Point(21, 135);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(75, 23);
-            this.delete_btn.TabIndex = 2;
-            this.delete_btn.Text = "DELETE";
-            this.delete_btn.UseVisualStyleBackColor = true;
-            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
-            // 
-            // save_btn
-            // 
-            this.save_btn.Location = new System.Drawing.Point(21, 84);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(75, 23);
-            this.save_btn.TabIndex = 1;
-            this.save_btn.Text = "SAVE";
-            this.save_btn.UseVisualStyleBackColor = true;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
-            // 
             // ShowStaff
             // 
-            this.ShowStaff.Location = new System.Drawing.Point(21, 33);
+            this.ShowStaff.Location = new System.Drawing.Point(56, 313);
             this.ShowStaff.Name = "ShowStaff";
             this.ShowStaff.Size = new System.Drawing.Size(82, 32);
             this.ShowStaff.TabIndex = 0;
@@ -151,7 +121,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 251);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(957, 474);
+            this.dataGridView1.Size = new System.Drawing.Size(887, 474);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_2);
             // 
@@ -168,7 +138,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(957, 251);
+            this.panel3.Size = new System.Drawing.Size(887, 251);
             this.panel3.TabIndex = 2;
             // 
             // panel7
@@ -183,7 +153,7 @@
             this.panel7.Controls.Add(this.dep_textbox);
             this.panel7.Location = new System.Drawing.Point(492, 7);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(217, 100);
+            this.panel7.Size = new System.Drawing.Size(147, 100);
             this.panel7.TabIndex = 12;
             // 
             // label11
@@ -249,7 +219,7 @@
             this.panel6.Controls.Add(this.tel_textbox);
             this.panel6.Location = new System.Drawing.Point(732, 12);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(219, 100);
+            this.panel6.Size = new System.Drawing.Size(149, 100);
             this.panel6.TabIndex = 11;
             // 
             // label8
@@ -306,23 +276,12 @@
             // choose_image
             // 
             this.choose_image.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.choose_image.Location = new System.Drawing.Point(181, 171);
+            this.choose_image.Location = new System.Drawing.Point(244, 135);
             this.choose_image.Name = "choose_image";
             this.choose_image.Size = new System.Drawing.Size(75, 23);
             this.choose_image.TabIndex = 10;
             this.choose_image.Text = "button1";
             this.choose_image.UseVisualStyleBackColor = true;
-            // 
-            // picture_box
-            // 
-            this.picture_box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picture_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(212)))), ((int)(((byte)(229)))));
-            this.picture_box.Location = new System.Drawing.Point(42, 135);
-            this.picture_box.Name = "picture_box";
-            this.picture_box.Size = new System.Drawing.Size(124, 92);
-            this.picture_box.TabIndex = 9;
-            this.picture_box.TabStop = false;
-            this.picture_box.Click += new System.EventHandler(this.picture_box_Click);
             // 
             // panel5
             // 
@@ -336,7 +295,7 @@
             this.panel5.Controls.Add(this.province_textbox);
             this.panel5.Location = new System.Drawing.Point(240, 9);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(237, 100);
+            this.panel5.Size = new System.Drawing.Size(167, 100);
             this.panel5.TabIndex = 8;
             // 
             // label6
@@ -403,7 +362,7 @@
             this.panel4.Controls.Add(this.gender_textbox);
             this.panel4.Location = new System.Drawing.Point(12, 9);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(212, 100);
+            this.panel4.Size = new System.Drawing.Size(142, 100);
             this.panel4.TabIndex = 7;
             // 
             // label3
@@ -462,10 +421,93 @@
             // birthday_datepicker
             // 
             this.birthday_datepicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.birthday_datepicker.Location = new System.Drawing.Point(347, 187);
+            this.birthday_datepicker.Location = new System.Drawing.Point(377, 174);
             this.birthday_datepicker.Name = "birthday_datepicker";
             this.birthday_datepicker.Size = new System.Drawing.Size(200, 20);
             this.birthday_datepicker.TabIndex = 1;
+            // 
+            // picture_box
+            // 
+            this.picture_box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picture_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(212)))), ((int)(((byte)(229)))));
+            this.picture_box.Location = new System.Drawing.Point(73, 135);
+            this.picture_box.Name = "picture_box";
+            this.picture_box.Size = new System.Drawing.Size(124, 92);
+            this.picture_box.TabIndex = 9;
+            this.picture_box.TabStop = false;
+            this.picture_box.Click += new System.EventHandler(this.picture_box_Click);
+            // 
+            // delete_button
+            // 
+            this.delete_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
+            this.delete_button.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.delete_button.BorderRadius = 8;
+            this.delete_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(233)))), ((int)(((byte)(241)))));
+            this.delete_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_button.ForeColor = System.Drawing.Color.Black;
+            this.delete_button.Image = global::C__Project.Properties.Resources.delete;
+            this.delete_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.delete_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.delete_button.IndicateFocus = true;
+            this.delete_button.Location = new System.Drawing.Point(7, 202);
+            this.delete_button.Name = "delete_button";
+            this.delete_button.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.delete_button.Size = new System.Drawing.Size(180, 75);
+            this.delete_button.TabIndex = 11;
+            this.delete_button.Text = "DELETE";
+            this.delete_button.TextFormatNoPrefix = true;
+            // 
+            // update_button
+            // 
+            this.update_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
+            this.update_button.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.update_button.BorderRadius = 8;
+            this.update_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.update_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.update_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.update_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.update_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(233)))), ((int)(((byte)(241)))));
+            this.update_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_button.ForeColor = System.Drawing.Color.Black;
+            this.update_button.Image = global::C__Project.Properties.Resources.changes;
+            this.update_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.update_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.update_button.IndicateFocus = true;
+            this.update_button.Location = new System.Drawing.Point(7, 111);
+            this.update_button.Name = "update_button";
+            this.update_button.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.update_button.Size = new System.Drawing.Size(180, 75);
+            this.update_button.TabIndex = 10;
+            this.update_button.Text = "UPDATE";
+            this.update_button.TextFormatNoPrefix = true;
+            // 
+            // save_button
+            // 
+            this.save_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(187)))), ((int)(((byte)(201)))));
+            this.save_button.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.save_button.BorderRadius = 8;
+            this.save_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.save_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.save_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.save_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.save_button.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(233)))), ((int)(((byte)(241)))));
+            this.save_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save_button.ForeColor = System.Drawing.Color.Black;
+            this.save_button.Image = global::C__Project.Properties.Resources.download;
+            this.save_button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.save_button.ImageSize = new System.Drawing.Size(30, 30);
+            this.save_button.IndicateFocus = true;
+            this.save_button.Location = new System.Drawing.Point(7, 12);
+            this.save_button.Name = "save_button";
+            this.save_button.PressedColor = System.Drawing.Color.WhiteSmoke;
+            this.save_button.Size = new System.Drawing.Size(180, 75);
+            this.save_button.TabIndex = 9;
+            this.save_button.Text = "SAVE";
+            this.save_button.TextFormatNoPrefix = true;
             // 
             // StaffScreen
             // 
@@ -487,11 +529,11 @@
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_box)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_box)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -501,9 +543,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button ShowStaff;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button edit_btn;
-        private System.Windows.Forms.Button delete_btn;
-        private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox gender_textbox;
         private System.Windows.Forms.DateTimePicker birthday_datepicker;
@@ -537,5 +576,8 @@
         private System.Windows.Forms.TextBox pos_textbox;
         private System.Windows.Forms.TextBox dep_textbox;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2Button delete_button;
+        private Guna.UI2.WinForms.Guna2Button update_button;
+        private Guna.UI2.WinForms.Guna2Button save_button;
     }
 }

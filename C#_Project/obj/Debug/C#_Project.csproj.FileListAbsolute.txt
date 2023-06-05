@@ -13,3 +13,5 @@ C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.StaffScr
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.DepartmentScreen.resources
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.PositionScreen.resources
 C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C__Project.Quilitification_screen.resources
+C:\Users\Advice\source\repos\C#_Project\C#_Project\bin\Debug\Guna.UI2.dll
+C:\Users\Advice\source\repos\C#_Project\C#_Project\obj\Debug\C#_Project.csproj.CopyComplete

@@ -74,5 +74,15 @@ namespace C__Project
             s.BringToFront();
             s.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

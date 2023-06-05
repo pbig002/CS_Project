@@ -26,5 +26,15 @@ namespace C__Project
         {
 
         }
+
+        private void save_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void delete_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
