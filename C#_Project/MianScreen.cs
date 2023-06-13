@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace C__Project
 {
-    public partial class MianScreen : Form
+    public partial class MianScreen : System.Windows.Forms.Form
     {
         public MianScreen()
         {
@@ -83,6 +83,11 @@ namespace C__Project
         private void exit_button_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void MianScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace C__Project
 {
-    public partial class Quilitification_screen : Form
+    public partial class Quilitification_screen : System.Windows.Forms.Form
     {
         public Quilitification_screen()
         {

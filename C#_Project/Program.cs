@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace C__Project
@@ -16,7 +17,7 @@ namespace C__Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MianScreen());
+            Application.Run(new NewSplashScreen());
         }
     }
 }

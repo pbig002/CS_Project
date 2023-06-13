@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace C__Project
 {
-    public partial class DepartmentScreen : Form
+    public partial class DepartmentScreen : System.Windows.Forms.Form
     {
         public DepartmentScreen()
         {

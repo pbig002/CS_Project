@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace C__Project
 {
-    public partial class PositionScreen : Form
+    public partial class PositionScreen : System.Windows.Forms.Form
     {
         public PositionScreen()
         {

@@ -11,12 +11,14 @@ using System.Windows.Forms;
 
 namespace C__Project
 {
-    public partial class StaffScreen : Form
+    public partial class StaffScreen : System.Windows.Forms.Form
     {
+
         public StaffScreen()
         {
             InitializeComponent();
         }
+        string img = null;
         string connectionString = "Data Source=LAPTOP-78EFFK5G;Initial Catalog= db_salary;Integrated Security=True";
         private void _ShowStaff()
         {
@@ -65,19 +67,19 @@ namespace C__Project
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Gender", gender_textbox.Text);
-                    command.Parameters.AddWithValue("@Name", name_textbox.Text);
+                  //  command.Parameters.AddWithValue("@Name", name_textbox.Text);
                     command.Parameters.AddWithValue("@Surename", surename_textbox.Text);
                     command.Parameters.AddWithValue("@Birthday", birthday_datepicker.Value);
                     command.Parameters.AddWithValue("@Village", village_textbox.Text);
                     command.Parameters.AddWithValue("@District", district_textbox.Text);
-                    command.Parameters.AddWithValue("@Province", province_textbox.Text);
+               //     command.Parameters.AddWithValue("@Province", province_textbox.Text);
                     command.Parameters.AddWithValue("@Tel", tel_textbox.Text);
                     command.Parameters.AddWithValue("@Mail", mail_textbox.Text);
                     command.Parameters.AddWithValue("@Facebook", facebook_textbox.Text);
                     command.Parameters.AddWithValue("@Picture", picture_box.Image);
-                    command.Parameters.AddWithValue("@Dep", dep_textbox.Text);
-                    command.Parameters.AddWithValue("@Pos", pos_textbox.Text);
-                    command.Parameters.AddWithValue("@Qua", qua_textbox.Text);
+               //     command.Parameters.AddWithValue("@Dep", dep_textbox.Text);
+                 //   command.Parameters.AddWithValue("@Pos", pos_textbox.Text);
+                   // command.Parameters.AddWithValue("@Qua", qua_textbox.Text);
 
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -134,19 +136,19 @@ namespace C__Project
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Gender", gender_textbox.Text);
-                        command.Parameters.AddWithValue("@Name", name_textbox.Text);
+                    //    command.Parameters.AddWithValue("@Name", name_textbox.Text);
                         command.Parameters.AddWithValue("@Surename", surename_textbox.Text);
                         command.Parameters.AddWithValue("@Birthday", birthday_datepicker.Value);
                         command.Parameters.AddWithValue("@Village", village_textbox.Text);
                         command.Parameters.AddWithValue("@District", district_textbox.Text);
-                        command.Parameters.AddWithValue("@Province", province_textbox.Text);
+                      //  command.Parameters.AddWithValue("@Province", province_textbox.Text);
                         command.Parameters.AddWithValue("@Tel", tel_textbox.Text);
                         command.Parameters.AddWithValue("@Mail", mail_textbox.Text);
                         command.Parameters.AddWithValue("@Facebook", facebook_textbox.Text);
                         command.Parameters.AddWithValue("@Picture", picture_box.Image);
-                        command.Parameters.AddWithValue("@Dep", dep_textbox.Text);
-                        command.Parameters.AddWithValue("@Pos", pos_textbox.Text);
-                        command.Parameters.AddWithValue("@Qua", qua_textbox.Text);
+                        //command.Parameters.AddWithValue("@Dep", dep_textbox.Text);
+                        //command.Parameters.AddWithValue("@Pos", pos_textbox.Text);
+                        //command.Parameters.AddWithValue("@Qua", qua_textbox.Text);
                         command.Parameters.AddWithValue("@StaffId", staffId);
 
                         connection.Open();
@@ -182,6 +184,18 @@ namespace C__Project
         private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void choose_image_Click(object sender, EventArgs e)
+        {
+            using(OpenFileDialog ofd = new OpenFileDialog())
+            {
+                if(ofd.ShowDialog() == DialogResult.OK)
+                {
+                    img = ofd.FileName;
+                    picture_box.Image = Image.FromFile(ofd.FileName);
+                }
+            }
         }
     }
 }
